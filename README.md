@@ -2,6 +2,35 @@
 
 The goal of this project is to take an underperforming website and make its pages render as quickly as possible by applying the techniques learned Udacity's [Critical Rendering Path course](https://www.udacity.com/course/ud884) course.
 
+##Steps to run project successfully
+
+###PageSpeed
+
+- Open the [live page](https://sandrine10.github.io/frontend-nanodegree-mobile-portfolio/) in your favorite browser.
+
+- Then in a separate browser tab, go to [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and type in the same URL that you used to open the live page. This should show my PageSpeed Insights scores. 
+Or see it directly <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsandrine10.github.io%2Ffrontend-nanodegree-mobile-portfolio%2F" target="_blank">here</a>
+
+
+###Pizza.html
+
+- Open the [pizza page](https://sandrine10.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html) in your browser.
+
+- Open DevTools and navigate to the Timeline.
+
+- Switch on Profile JS and Paint.
+
+- Press the record button at the top left, scroll a bit, then press the record button again to view the record.
+
+- Once you have reviewed the scrolling records, find the pizza resize button, press the record button again, click the resize button a few times, then press the record button again to view the record.
+
+
+##Optimizations I made
+
+###Optimizations to index.html
+
+- Added media=“print” to print.css link
+
 To get started, check out the repository and inspect the code.
 
 ### Getting started
