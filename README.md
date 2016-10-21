@@ -29,7 +29,15 @@ Or see it directly <a href="https://developers.google.com/speed/pagespeed/insigh
 
 ###Optimizations to index.html
 
-- Added media=“print” to print.css link
+- Add media=“print” to print.css link
+- Add CSS from the CSS file
+- Add async attribute for the analytic JS link
+- Optimize pizzeria.jpg
+- Optmize profilepic.jpg
+
+###Optimizations to views/js/main.js
+
+
 
 To get started, check out the repository and inspect the code.
 
