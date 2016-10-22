@@ -30,7 +30,7 @@ Or see it directly <a href="https://developers.google.com/speed/pagespeed/insigh
 ###Optimizations to index.html
 
 - Add media=“print” to print.css link
-- Move CSS from the CSS file
+- Move CSS.style from the CSS folder to index
 - Add async attribute to the Google analytics JS script
 - Optimize pizzeria.jpg
 - Optimize profilepic.jpg
