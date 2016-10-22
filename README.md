@@ -30,12 +30,16 @@ Or see it directly <a href="https://developers.google.com/speed/pagespeed/insigh
 ###Optimizations to index.html
 
 - Add media=“print” to print.css link
-- Add CSS from the CSS file
-- Add async attribute for the analytic JS link
+- Move CSS from the CSS file
+- Add async attribute to the Google analytics JS script
 - Optimize pizzeria.jpg
-- Optmize profilepic.jpg
+- Optimize profilepic.jpg
+- Remove style.css
+- Remove google fonts
 
 ###Optimizations to views/js/main.js
+
+- Optimize pizza.png
 
 
 
