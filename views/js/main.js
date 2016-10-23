@@ -454,7 +454,7 @@ var resizePizzas = function(size) {
    var dx = determineDx(randomPizzas[0], size);
    var newwidth = (randomPizzas[0].offsetWidth + dx) + 'px';
      for (var i = 0; i < randomPizzas.length; i++) {
-              randomPizzas[i].style.width = newwidth;
+       randomPizzas[i].style.width = newwidth;
     }
   }
 
@@ -510,8 +510,13 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   //var items = document.querySelectorAll('.mover');
+  //per reviewer's suggestion, move out the document.body.scrollTop from the loop, store it in a variable and re-use it inside the loop  
+  //to speed up the animation.
+  var scroll = document.body.scrollTop / 1250;
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+   // var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+   // Replaced that line with var scroll since it is now part of this loop
+   var phase = Math.sin((scroll)) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -537,9 +542,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // from a forum mentor at the FEND forum, to calculate # of pizza's per viewer's viewport:
   var intViewportWidth = window.innerWidth;
 
-  // Changed the number of sliding pizzas to 20;
+  // per reviewer's suggestion, increased the number of sliding pizzas from 20 to 24 to fill 3 rows;
   // Also placed the var 'elem' in the loop initialization for efficiency
-  for (var i = 0, elem; i < 20; i++) {
+  for (var i = 0, elem; i < 24; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
