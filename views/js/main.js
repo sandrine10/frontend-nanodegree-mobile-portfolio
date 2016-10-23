@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
 //Created this var before the loop to get rid of the querySelector in the loop:
   var movingPizzas = document.getElementById('movingPizzas1');
-  // By a suggestion from an instructor on the FEND forum, to calculate # of pizza's per viewer's viewport:
+  // from a forum mentor at the FEND forum, to calculate # of pizza's per viewer's viewport:
   var intViewportWidth = window.innerWidth;
 
   // Changed the number of sliding pizzas to 20;
